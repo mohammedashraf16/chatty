@@ -7,10 +7,11 @@ class CustomBtn extends StatelessWidget {
       required this.onPressed,
       required this.text,
       required this.bgColor,
-      required this.iconColor, this.elevation});
+      required this.iconColor, this.elevation, required this.textColor});
 
   final void Function()? onPressed;
   final String text;
+  final Color textColor;
   final Color bgColor;
   final Color iconColor;
   final double? elevation;
@@ -32,7 +33,7 @@ class CustomBtn extends StatelessWidget {
             children: [
               Text(
                 text,
-                style: GoogleFonts.poppins(fontSize: 16, color: Colors.white),
+                style: GoogleFonts.poppins(fontSize: 16, color: textColor),
               ),
               const Spacer(),
               Icon(

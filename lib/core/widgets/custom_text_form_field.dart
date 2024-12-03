@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({super.key, this.onChanged, required this.fieldName, required this.hintText});
-final void Function(String)? onChanged;
-final String fieldName;
-final String hintText;
+  const CustomTextFormField(
+      {super.key,
+      this.onChanged,
+      required this.fieldName,
+      required this.hintText,
+      this.validator});
+
+  final void Function(String)? onChanged;
+  final String fieldName;
+  final String hintText;
+  final String? Function(String?)? validator;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -13,12 +20,7 @@ final String hintText;
         hintText: hintText,
       ),
       onChanged: onChanged,
-      validator:(text) {
-        if(text==null||text.trim().isEmpty){
-          return 'Please Enter Your $fieldName';
-        }
-        return null;
-      },
+      validator: validator,
     );
   }
 }
