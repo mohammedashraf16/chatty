@@ -1,6 +1,7 @@
-import 'package:chatty/features/sign_in/sign_in_view.dart';
 import 'package:chatty/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
+
+import 'features/auth/sign_in/sign_in_view.dart';
 
 void main(){
   runApp(const MyApp());

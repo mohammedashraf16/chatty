@@ -1,4 +1,4 @@
-import 'package:chatty/features/sign_in/sign_in_view.dart';
+import 'package:chatty/features/auth/sign_in/sign_in_view.dart';
 import 'package:flutter/material.dart';
 
 class SplashViewBody extends StatefulWidget {
