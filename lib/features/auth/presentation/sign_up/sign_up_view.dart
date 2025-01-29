@@ -1,4 +1,4 @@
-import 'package:chatty/features/auth/sign_up/widgets/sign_up_view_body.dart';
+import 'package:chatty/features/auth/presentation/sign_up/widgets/sign_up_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,7 +29,7 @@ class SignUpView extends StatelessWidget {
             centerTitle: true,
           ),
           backgroundColor: Colors.transparent,
-          body:   SignUpViewBody(),
+          body:   const SignUpViewBody(),
         ),
       ],
     );
