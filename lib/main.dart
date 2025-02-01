@@ -1,6 +1,8 @@
 import 'package:chatty/features/auth/presentation/provider/user_provider.dart';
 import 'package:chatty/features/auth/presentation/sign_in/sign_in_view.dart';
 import 'package:chatty/features/auth/presentation/sign_up/sign_up_view.dart';
+import 'package:chatty/features/chat/presentation/views/chat_view.dart';
+import 'package:chatty/features/home/add_room/presentation/views/add_room.dart';
 import 'package:chatty/features/home/presentation/views/home_view.dart';
 import 'package:chatty/features/splash/splash_view.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -32,6 +34,8 @@ class MyApp extends StatelessWidget {
         SignInView.routeName: (context) => const SignInView(),
         SignUpView.routeName: (context) => const SignUpView(),
         HomeView.routeName: (context) => const HomeView(),
+        AddRoom.routeName: (context) => const AddRoom(),
+        ChatView.routName: (context) => const ChatView(),
       },
       initialRoute: provider.firebaseUser==null? SignInView.routeName:HomeView.routeName,
     );

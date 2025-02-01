@@ -1,5 +1,5 @@
 import 'package:chatty/core/utils/firebase_errors.dart';
-import 'package:chatty/features/auth/data/database_utils.dart';
+import 'package:chatty/core/utils/database_utils.dart';
 import 'package:chatty/features/auth/data/model/my_user.dart';
 import 'package:chatty/features/auth/presentation/sign_up/manager/sign_up_navigator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
